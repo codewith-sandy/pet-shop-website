@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our collection of exotic birds, dogs, puppies, and pet accessories at Chennai Pet's World, Kolathur.">
+    <meta name="keywords" content="Exotic birds Chennai, Dogs for sale Kolathur, Pet shop Chennai, Parrots Chennai">
+    
+    <title>Our Pets | Chennai Pet's World - Exotic Birds & Dogs</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐦</text></svg>">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#009688',
+                        accent: '#FFC107',
+                        cta: '#FF5722',
+                        dark: '#1a1a2e',
+                    },
+                    fontFamily: {
+                        'heading': ['Poppins', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-body bg-white text-gray-800">
+    
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center space-x-3 group">
+                    <div class="w-12 h-12 bg-gradient-to-br from-primary to-teal-400 rounded-xl flex items-center justify-center transform group-hover:rotate-6 transition-transform">
+                        <span class="text-2xl">🐦</span>
+                    </div>
+                    <div>
+                        <h1 class="font-heading font-bold text-lg text-dark leading-tight">CHENNAI PET'S</h1>
+                        <p class="text-xs text-primary font-medium tracking-wider">WORLD</p>
+                    </div>
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="pets.html" class="nav-link active">Our Pets</a>
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                    <a href="reviews.html" class="nav-link">Reviews</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                
+                <!-- CTA Button -->
+                <a href="tel:09941950925" class="hidden md:flex items-center space-x-2 bg-cta text-white px-5 py-2.5 rounded-full font-medium hover:bg-orange-600 transition-all hover:shadow-lg hover:shadow-orange-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                    </svg>
+                    <span>Call Now</span>
+                </a>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2 rounded-lg hover:bg-gray-100" id="mobile-menu-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-white border-t" id="mobile-menu">
+            <div class="px-4 py-3 space-y-2">
+                <a href="index.html" class="block px-4 py-2 rounded-lg hover:bg-gray-100">Home</a>
+                <a href="about.html" class="block px-4 py-2 rounded-lg hover:bg-gray-100">About</a>
+                <a href="pets.html" class="block px-4 py-2 rounded-lg bg-primary/10 text-primary font-medium">Our Pets</a>
+                <a href="gallery.html" class="block px-4 py-2 rounded-lg hover:bg-gray-100">Gallery</a>
+                <a href="reviews.html" class="block px-4 py-2 rounded-lg hover:bg-gray-100">Reviews</a>
+                <a href="contact.html" class="block px-4 py-2 rounded-lg hover:bg-gray-100">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-teal-50 via-white to-yellow-50 relative overflow-hidden">
+        <div class="absolute top-20 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-80 h-80 bg-primary/10 rounded-full blur-3xl"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center" data-aos="fade-up">
+                <span class="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-4">Our Pets</span>
+                <h1 class="font-heading text-4xl sm:text-5xl font-bold text-dark mb-6">Find Your Perfect Companion</h1>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Explore our collection of exotic birds, adorable dogs, and premium accessories. Each pet is carefully selected for health and temperament.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Tabs -->
+    <section class="py-8 bg-white sticky top-20 z-40 border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap justify-center gap-3" id="filter-tabs">
+                <button class="filter-btn active px-6 py-2.5 rounded-full font-medium transition-all" data-filter="all">All Pets</button>
+                <button class="filter-btn px-6 py-2.5 rounded-full font-medium transition-all" data-filter="birds">🦜 Exotic Birds</button>
+                <button class="filter-btn px-6 py-2.5 rounded-full font-medium transition-all" data-filter="dogs">🐕 Dogs</button>
+                <button class="filter-btn px-6 py-2.5 rounded-full font-medium transition-all" data-filter="accessories">🏠 Accessories</button>
+                <button class="filter-btn px-6 py-2.5 rounded-full font-medium transition-all" data-filter="food">🍖 Pet Food</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pets Grid -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Birds Section -->
+            <div class="mb-16" id="birds-section">
+                <div class="flex items-center justify-between mb-8" data-aos="fade-up">
+                    <div>
+                        <h2 class="font-heading text-2xl sm:text-3xl font-bold text-dark flex items-center">
+                            <span class="text-3xl mr-3">🦜</span> Exotic Birds
+                        </h2>
+                        <p class="text-gray-600 mt-2">Colorful and intelligent feathered friends</p>
+                    </div>
+                </div>
+                
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 pet-grid" data-category="birds">
+                    <!-- Bird 1 -->
+                    <div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 pet-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1544923246-77307dd628b9?w=400&h=300&fit=crop" alt="African Grey Parrot" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute top-4 right-4 bg-accent text-dark px-3 py-1 rounded-full text-sm font-medium">Popular</div>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-primary text-sm font-medium">Parrot</span>
+                            <h3 class="font-heading text-lg font-bold text-dark mt-1">African Grey Parrot</h3>
+                            <p class="text-gray-500 text-sm mt-2">Highly intelligent, excellent talker</p>
+                            <a href="https://wa.me/919941950925?text=Hi! I'm interested in the African Grey Parrot." class="mt-4 w-full inline-flex items-center justify-center space-x-2 bg-primary/10 text-primary px-4 py-2.5 rounded-xl font-medium hover:bg-primary hover:text-white transition-all">
+                                <span>Enquire Now</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Bird 2 -->
+                    <div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 pet-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1452570053594-1b985d6ea890?w=400&h=300&fit=crop" alt="Scarlet Macaw" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute top-4 right-4 bg-cta text-white px-3 py-1 rounded-full text-sm font-medium">Exotic</div>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-primary text-sm font-medium">Macaw</span>
+                            <h3 class="font-heading text-lg font-bold text-dark mt-1">Scarlet Macaw</h3>
+                            <p class="text-gray-500 text-sm mt-2">Vibrant colors, playful nature</p>
+                            <a href="https://wa.me/919941950925?text=Hi! I'm interested in the Scarlet Macaw." class="mt-4 w-full inline-flex items-center justify-center space-x-2 bg-primary/10 text-primary px-4 py-2.5 rounded-xl font-medium hover:bg-primary hover:text-white transition-all">
+                                <span>Enquire Now</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Bird 3 -->
+                    <div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 pet-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1552728089-57bdde30beb3?w=400&h=300&fit=crop" alt="Cockatoo" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">Available</div>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-primary text-sm font-medium">Cockatoo</span>
+                            <h3 class="font-heading text-lg font-bold text-dark mt-1">Umbrella Cockatoo</h3>
+                            <p class="text-gray-500 text-sm mt-2">Affectionate, loves attention</p>
+                            <a href="https://wa.me/919941950925?text=Hi! I'm interested in the Umbrella Cockatoo." class="mt-4 w-full inline-flex items-center justify-center space-x-2 bg-primary/10 text-primary px-4 py-2.5 rounded-xl font-medium hover:bg-primary hover:text-white transition-all">
+                                <span>Enquire Now</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Bird 4 -->
+                    <div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 pet-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1518715303843-586e350765b2?w=400&h=300&fit=crop" alt="Budgerigar" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">Available</div>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-primary text-sm font-medium">Budgie</span>
+                            <h3 class="font-heading text-lg font-bold text-dark mt-1">Budgerigar</h3>
+                            <p class="text-gray-500 text-sm mt-2">Perfect starter bird, friendly</p>
+                            <a href="https://wa.me/919941950925?text=Hi! I'm interested in the Budgerigar." class="mt-4 w-full inline-flex items-center justify-center space-x-2 bg-primary/10 text-primary px-4 py-2.5 rounded-xl font-medium hover:bg-primary hover:text-white transition-all">
+                                <span>Enquire Now</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Bird 5 -->
+                    <div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 pet-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1591198936750-16d8e15edb8e?w=400&h=300&fit=crop" alt="Sun Conure" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute top-4 right-4 bg-accent text-dark px-3 py-1 rounded-full text-sm font-medium">Popular</div>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-primary text-sm font-medium">Conure</span>
+                            <h3 class="font-heading text-lg font-bold text-dark mt-1">Sun Conure</h3>
+                            <p class="text-gray-500 text-sm mt-2">Bright, social, and playful</p>
+                            <a href="https://wa.me/919941950925?text=Hi! I'm interested in the Sun Conure." class="mt-4 w-full inline-flex items-center justify-center space-x-2 bg-primary/10 text-primary px-4 py-2.5 rounded-xl font-medium hover:bg-primary hover:text-white transition-all">
+                                <span>Enquire Now</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Bird 6 -->
+                    <div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 pet-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1606567595334-d39972c85dfd?w=400&h=300&fit=crop" alt="Lovebirds" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">Available</div>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-primary text-sm font-medium">Lovebird</span>
+                            <h3 class="font-heading text-lg font-bold text-dark mt-1">Lovebirds Pair</h3>
+                            <p class="text-gray-500 text-sm mt-2">Adorable pairs, easy to care</p>
+                            <a href="https://wa.me/919941950925?text=Hi! I'm interested in the Lovebirds." class="mt-4 w-full inline-flex items-center justify-center space-x-2 bg-primary/10 text-primary px-4 py-2.5 rounded-xl font-medium hover:bg-primary hover:text-white transition-all">
+                                <span>Enquire Now</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Bird 7 -->
+                    <div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 pet-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" alt="Cockatiel" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">Available</div>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-primary text-sm font-medium">Cockatiel</span>
+                            <h3 class="font-heading text-lg font-bold text-dark mt-1">Cockatiel</h3>
+                            <p class="text-gray-500 text-sm mt-2">Whistles tunes, gentle nature</p>
+                            <a href="https://wa.me/919941950925?text=Hi! I'm interested in the Cockatiel." class="mt-4 w-full inline-flex items-center justify-center space-x-2 bg-primary/10 text-primary px-4 py-2.5 rounded-xl font-medium hover:bg-primary hover:text-white transition-all">
+                                <span>Enquire Now</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Bird 8 -->
+                    <div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 pet-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1544923246-77307dd628b9?w=400&h=300&fit=crop" alt="Amazon Parrot" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute top-4 right-4 bg-cta text-white px-3 py-1 rounded-full text-sm font-medium">Exotic</div>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-primary text-sm font-medium">Parrot</span>
+                            <h3 class="font-heading text-lg font-bold text-dark mt-1">Amazon Parrot</h3>
+                            <p class="text-gray-500 text-sm mt-2">Great vocalist, long lifespan</p>
+                            <a href="https://wa.me/919941950925?text=Hi! I'm interested in the Amazon Parrot." class="mt-4 w-full inline-flex items-center justify-center space-x-2 bg-primary/10 text-primary px-4 py-2.5 rounded-xl font-medium hover:bg-primary hover:text-white transition-all">
+                                <span>Enquire Now</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Dogs Section -->
+            <div class="mb-16" id="dogs-section">
+                <div class="flex items-center justify-between mb-8" data-aos="fade-up">
+                    <div>
+                        <h2 class="font-heading text-2xl sm:text-3xl font-bold text-dark flex items-center">
+                            <span class="text-3xl mr-3">🐕</span> Dogs & Puppies
+                        </h2>
+                        <p class="text-gray-600 mt-2">Loyal companions for your family</p>
+                    </div>
+                </div>
+                
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 pet-grid" data-category="dogs">
+                    <!-- Dog 1 -->
+                    <div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 pet-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400&h=300&fit=crop" alt="Golden Retriever" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute top-4 right-4 bg-accent text-dark px-3 py-1 rounded-full text-sm font-medium">Popular</div>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-primary text-sm font-medium">Retriever</span>
+                            <h3 class="font-heading text-lg font-bold text-dark mt-1">Golden Retriever</h3>
+                            <p class="text-gray-500 text-sm mt-2">Family friendly, intelligent</p>
+                            <a href="https://wa.me/919941950925?text=Hi! I'm interested in the Golden Retriever." class="mt-4 w-full inline-flex items-center justify-center space-x-2 bg-primary/10 text-primary px-4 py-2.5 rounded-xl font-medium hover:bg-primary hover:text-white transition-all">
+                                <span>Enquire Now</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Dog 2 -->
+                    <div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 pet-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?w=400&h=300&fit=crop" alt="Labrador" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">Available</div>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-primary text-sm font-medium">Labrador</span>
+                            <h3 class="font-heading text-lg font-bold text-dark mt-1">Labrador Puppy</h3>
+                            <p class="text-gray-500 text-sm mt-2">Loyal, playful, great with kids</p>
+                            <a href="https://wa.me/919941950925?text=Hi! I'm interested in the Labrador Puppy." class="mt-4 w-full inline-flex items-center justify-center space-x-2 bg-primary/10 text-primary px-4 py-2.5 rounded-xl font-medium hover:bg-primary hover:text-white transition-all">
+                                <span>Enquire Now</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Dog 3 -->
+                    <div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 pet-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=400&h=300&fit=crop" alt="German Shepherd" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute top-4 right-4 bg-accent text-dark px-3 py-1 rounded-full text-sm font-medium">Popular</div>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-primary text-sm font-medium">Shepherd</span>
+                            <h3 class="font-heading text-lg font-bold text-dark mt-1">German Shepherd</h3>
+                            <p class="text-gray-500 text-sm mt-2">Protective, highly trainable</p>
+                            <a href="https://wa.me/919941950925?text=Hi! I'm interested in the German Shepherd." class="mt-4 w-full inline-flex items-center justify-center space-x-2 bg-primary/10 text-primary px-4 py-2.5 rounded-xl font-medium hover:bg-primary hover:text-white transition-all">
+                                <span>Enquire Now</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Dog 4 -->
+                    <div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 pet-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=400&h=300&fit=crop" alt="Beagle" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">Available</div>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-primary text-sm font-medium">Beagle</span>
+                            <h3 class="font-heading text-lg font-bold text-dark mt-1">Beagle Puppy</h3>
+                            <p class="text-gray-500 text-sm mt-2">Curious, merry, friendly</p>
+                            <a href="https://wa.me/919941950925?text=Hi! I'm interested in the Beagle Puppy." class="mt-4 w-full inline-flex items-center justify-center space-x-2 bg-primary/10 text-primary px-4 py-2.5 rounded-xl font-medium hover:bg-primary hover:text-white transition-all">
+                                <span>Enquire Now</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Dog 5 -->
+                    <div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 pet-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1605568427561-40dd23c2acea?w=400&h=300&fit=crop" alt="Pomeranian" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute top-4 right-4 bg-cta text-white px-3 py-1 rounded-full text-sm font-medium">Cute</div>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-primary text-sm font-medium">Pomeranian</span>
+                            <h3 class="font-heading text-lg font-bold text-dark mt-1">Pomeranian</h3>
+                            <p class="text-gray-500 text-sm mt-2">Small, fluffy, spirited</p>
+                            <a href="https://wa.me/919941950925?text=Hi! I'm interested in the Pomeranian." class="mt-4 w-full inline-flex items-center justify-center space-x-2 bg-primary/10 text-primary px-4 py-2.5 rounded-xl font-medium hover:bg-primary hover:text-white transition-all">
+                                <span>Enquire Now</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Dog 6 -->
+                    <div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 pet-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?w=400&h=300&fit=crop" alt="Husky" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">Available</div>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-primary text-sm font-medium">Husky</span>
+                            <h3 class="font-heading text-lg font-bold text-dark mt-1">Siberian Husky</h3>
+                            <p class="text-gray-500 text-sm mt-2">Beautiful, energetic, friendly</p>
+                            <a href="https://wa.me/919941950925?text=Hi! I'm interested in the Siberian Husky." class="mt-4 w-full inline-flex items-center justify-center space-x-2 bg-primary/10 text-primary px-4 py-2.5 rounded-xl font-medium hover:bg-primary hover:text-white transition-all">
+                                <span>Enquire Now</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Accessories Section -->
+            <div class="mb-16" id="accessories-section">
+                <div class="flex items-center justify-between mb-8" data-aos="fade-up">
+                    <div>
+                        <h2 class="font-heading text-2xl sm:text-3xl font-bold text-dark flex items-center">
+                            <span class="text-3xl mr-3">🏠</span> Cages & Accessories
+                        </h2>
+                        <p class="text-gray-600 mt-2">Premium quality pet homes and essentials</p>
+                    </div>
+                </div>
+                
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 pet-grid" data-category="accessories">
+                    <div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 pet-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="relative overflow-hidden bg-gradient-to-br from-teal-50 to-teal-100 p-8 flex items-center justify-center h-56">
+                            <span class="text-8xl group-hover:scale-110 transition-transform">🏠</span>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-primary text-sm font-medium">Cages</span>
+                            <h3 class="font-heading text-lg font-bold text-dark mt-1">Bird Cages</h3>
+                            <p class="text-gray-500 text-sm mt-2">Various sizes available</p>
+                            <a href="https://wa.me/919941950925?text=Hi! I'm interested in Bird Cages." class="mt-4 w-full inline-flex items-center justify-center space-x-2 bg-primary/10 text-primary px-4 py-2.5 rounded-xl font-medium hover:bg-primary hover:text-white transition-all">
+                                <span>Enquire Now</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 pet-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="relative overflow-hidden bg-gradient-to-br from-amber-50 to-amber-100 p-8 flex items-center justify-center h-56">
+                            <span class="text-8xl group-hover:scale-110 transition-transform">🛏️</span>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-primary text-sm font-medium">Beds</span>
+                            <h3 class="font-heading text-lg font-bold text-dark mt-1">Pet Beds</h3>
+                            <p class="text-gray-500 text-sm mt-2">Comfortable & cozy</p>
+                            <a href="https://wa.me/919941950925?text=Hi! I'm interested in Pet Beds." class="mt-4 w-full inline-flex items-center justify-center space-x-2 bg-primary/10 text-primary px-4 py-2.5 rounded-xl font-medium hover:bg-primary hover:text-white transition-all">
+                                <span>Enquire Now</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 pet-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="relative overflow-hidden bg-gradient-to-br from-orange-50 to-orange-100 p-8 flex items-center justify-center h-56">
+                            <span class="text-8xl group-hover:scale-110 transition-transform">🎾</span>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-primary text-sm font-medium">Toys</span>
+                            <h3 class="font-heading text-lg font-bold text-dark mt-1">Pet Toys</h3>
+                            <p class="text-gray-500 text-sm mt-2">Fun & engaging toys</p>
+                            <a href="https://wa.me/919941950925?text=Hi! I'm interested in Pet Toys." class="mt-4 w-full inline-flex items-center justify-center space-x-2 bg-primary/10 text-primary px-4 py-2.5 rounded-xl font-medium hover:bg-primary hover:text-white transition-all">
+                                <span>Enquire Now</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 pet-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="relative overflow-hidden bg-gradient-to-br from-green-50 to-green-100 p-8 flex items-center justify-center h-56">
+                            <span class="text-8xl group-hover:scale-110 transition-transform">🦴</span>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-primary text-sm font-medium">Supplies</span>
+                            <h3 class="font-heading text-lg font-bold text-dark mt-1">Pet Supplies</h3>
+                            <p class="text-gray-500 text-sm mt-2">Everything you need</p>
+                            <a href="https://wa.me/919941950925?text=Hi! I'm interested in Pet Supplies." class="mt-4 w-full inline-flex items-center justify-center space-x-2 bg-primary/10 text-primary px-4 py-2.5 rounded-xl font-medium hover:bg-primary hover:text-white transition-all">
+                                <span>Enquire Now</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pet Food Section -->
+            <div id="food-section">
+                <div class="flex items-center justify-between mb-8" data-aos="fade-up">
+                    <div>
+                        <h2 class="font-heading text-2xl sm:text-3xl font-bold text-dark flex items-center">
+                            <span class="text-3xl mr-3">🍖</span> Pet Food
+                        </h2>
+                        <p class="text-gray-600 mt-2">Nutritious food for healthy pets</p>
+                    </div>
+                </div>
+                
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 pet-grid" data-category="food">
+                    <div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 pet-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="relative overflow-hidden bg-gradient-to-br from-amber-50 to-yellow-100 p-8 flex items-center justify-center h-56">
+                            <span class="text-8xl group-hover:scale-110 transition-transform">🌾</span>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-primary text-sm font-medium">Bird Food</span>
+                            <h3 class="font-heading text-lg font-bold text-dark mt-1">Bird Seeds Mix</h3>
+                            <p class="text-gray-500 text-sm mt-2">Premium quality seeds</p>
+                            <a href="https://wa.me/919941950925?text=Hi! I'm interested in Bird Food." class="mt-4 w-full inline-flex items-center justify-center space-x-2 bg-primary/10 text-primary px-4 py-2.5 rounded-xl font-medium hover:bg-primary hover:text-white transition-all">
+                                <span>Enquire Now</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 pet-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="relative overflow-hidden bg-gradient-to-br from-red-50 to-red-100 p-8 flex items-center justify-center h-56">
+                            <span class="text-8xl group-hover:scale-110 transition-transform">🥩</span>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-primary text-sm font-medium">Dog Food</span>
+                            <h3 class="font-heading text-lg font-bold text-dark mt-1">Dog Food</h3>
+                            <p class="text-gray-500 text-sm mt-2">Nutritious meals for dogs</p>
+                            <a href="https://wa.me/919941950925?text=Hi! I'm interested in Dog Food." class="mt-4 w-full inline-flex items-center justify-center space-x-2 bg-primary/10 text-primary px-4 py-2.5 rounded-xl font-medium hover:bg-primary hover:text-white transition-all">
+                                <span>Enquire Now</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 pet-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="relative overflow-hidden bg-gradient-to-br from-orange-50 to-orange-100 p-8 flex items-center justify-center h-56">
+                            <span class="text-8xl group-hover:scale-110 transition-transform">🦴</span>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-primary text-sm font-medium">Treats</span>
+                            <h3 class="font-heading text-lg font-bold text-dark mt-1">Pet Treats</h3>
+                            <p class="text-gray-500 text-sm mt-2">Delicious & healthy treats</p>
+                            <a href="https://wa.me/919941950925?text=Hi! I'm interested in Pet Treats." class="mt-4 w-full inline-flex items-center justify-center space-x-2 bg-primary/10 text-primary px-4 py-2.5 rounded-xl font-medium hover:bg-primary hover:text-white transition-all">
+                                <span>Enquire Now</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 pet-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="relative overflow-hidden bg-gradient-to-br from-green-50 to-green-100 p-8 flex items-center justify-center h-56">
+                            <span class="text-8xl group-hover:scale-110 transition-transform">💊</span>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-primary text-sm font-medium">Supplements</span>
+                            <h3 class="font-heading text-lg font-bold text-dark mt-1">Pet Supplements</h3>
+                            <p class="text-gray-500 text-sm mt-2">Vitamins & minerals</p>
+                            <a href="https://wa.me/919941950925?text=Hi! I'm interested in Pet Supplements." class="mt-4 w-full inline-flex items-center justify-center space-x-2 bg-primary/10 text-primary px-4 py-2.5 rounded-xl font-medium hover:bg-primary hover:text-white transition-all">
+                                <span>Enquire Now</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-primary to-teal-500">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="font-heading text-3xl sm:text-4xl font-bold text-white mb-6" data-aos="fade-up">Can't Find What You're Looking For?</h2>
+            <p class="text-white/90 text-lg mb-8" data-aos="fade-up" data-aos-delay="100">Contact us with your requirements. We can help you find the perfect pet!</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center" data-aos="fade-up" data-aos-delay="200">
+                <a href="contact.html" class="inline-flex items-center justify-center space-x-2 bg-white text-primary px-8 py-4 rounded-full font-semibold hover:shadow-xl transition-all transform hover:-translate-y-1">
+                    <span>Contact Us</span>
+                </a>
+                <a href="https://wa.me/919941950925?text=Hi! I'm looking for a specific pet." class="inline-flex items-center justify-center space-x-2 bg-green-500 text-white px-8 py-4 rounded-full font-semibold hover:bg-green-600 transition-all transform hover:-translate-y-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    </svg>
+                    <span>WhatsApp Us</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12">
+                <div class="md:col-span-1">
+                    <a href="index.html" class="flex items-center space-x-3 mb-6">
+                        <div class="w-12 h-12 bg-gradient-to-br from-primary to-teal-400 rounded-xl flex items-center justify-center">
+                            <span class="text-2xl">🐦</span>
+                        </div>
+                        <div>
+                            <h3 class="font-heading font-bold text-lg leading-tight">CHENNAI PET'S</h3>
+                            <p class="text-xs text-primary font-medium tracking-wider">WORLD</p>
+                        </div>
+                    </a>
+                    <p class="text-gray-400 text-sm">Chennai's trusted destination for exotic birds, dogs, and premium pet accessories.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-heading font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-primary transition-colors">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-primary transition-colors">About Us</a></li>
+                        <li><a href="pets.html" class="text-gray-400 hover:text-primary transition-colors">Our Pets</a></li>
+                        <li><a href="gallery.html" class="text-gray-400 hover:text-primary transition-colors">Gallery</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-primary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-heading font-bold mb-6">Our Pets</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#birds-section" class="text-gray-400 hover:text-primary transition-colors">Exotic Birds</a></li>
+                        <li><a href="#dogs-section" class="text-gray-400 hover:text-primary transition-colors">Dogs & Puppies</a></li>
+                        <li><a href="#accessories-section" class="text-gray-400 hover:text-primary transition-colors">Accessories</a></li>
+                        <li><a href="#food-section" class="text-gray-400 hover:text-primary transition-colors">Pet Food</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-heading font-bold mb-6">Contact Info</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start space-x-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-gray-400 text-sm">19, S Mada St, Villivakkam, Kolathur, Chennai</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                            </svg>
+                            <a href="tel:09941950925" class="text-gray-400 hover:text-primary transition-colors">099419 50925</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-500 text-sm">© 2026 Chennai Pet's World. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919941950925?text=Hi! I'm interested in your pets." class="fixed bottom-6 right-6 w-14 h-14 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-all hover:scale-110 z-50 animate-bounce-slow" aria-label="Chat on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-white" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+    <!-- Mobile Call Button -->
+    <a href="tel:09941950925" class="fixed bottom-6 left-6 md:hidden w-14 h-14 bg-cta rounded-full flex items-center justify-center shadow-lg hover:bg-orange-600 transition-all z-50" aria-label="Call Now">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+        </svg>
+    </a>
+
+    <!-- AOS Animation Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

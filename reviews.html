@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read customer reviews and testimonials about Chennai Pet's World. 4.8 star rating from happy pet owners in Kolathur, Chennai.">
+    <meta name="keywords" content="Chennai Pet Shop reviews, Pet shop Kolathur testimonials, Best pet shop Chennai">
+    
+    <title>Customer Reviews | Chennai Pet's World - 4.8 Star Rating</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐦</text></svg>">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#009688',
+                        accent: '#FFC107',
+                        cta: '#FF5722',
+                        dark: '#1a1a2e',
+                    },
+                    fontFamily: {
+                        'heading': ['Poppins', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-body bg-white text-gray-800">
+    
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center space-x-3 group">
+                    <div class="w-12 h-12 bg-gradient-to-br from-primary to-teal-400 rounded-xl flex items-center justify-center transform group-hover:rotate-6 transition-transform">
+                        <span class="text-2xl">🐦</span>
+                    </div>
+                    <div>
+                        <h1 class="font-heading font-bold text-lg text-dark leading-tight">CHENNAI PET'S</h1>
+                        <p class="text-xs text-primary font-medium tracking-wider">WORLD</p>
+                    </div>
+                </a>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="pets.html" class="nav-link">Our Pets</a>
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                    <a href="reviews.html" class="nav-link active">Reviews</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                
+                <a href="tel:09941950925" class="hidden md:flex items-center space-x-2 bg-cta text-white px-5 py-2.5 rounded-full font-medium hover:bg-orange-600 transition-all hover:shadow-lg hover:shadow-orange-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                    </svg>
+                    <span>Call Now</span>
+                </a>
+                
+                <button class="md:hidden p-2 rounded-lg hover:bg-gray-100" id="mobile-menu-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <div class="md:hidden hidden bg-white border-t" id="mobile-menu">
+            <div class="px-4 py-3 space-y-2">
+                <a href="index.html" class="block px-4 py-2 rounded-lg hover:bg-gray-100">Home</a>
+                <a href="about.html" class="block px-4 py-2 rounded-lg hover:bg-gray-100">About</a>
+                <a href="pets.html" class="block px-4 py-2 rounded-lg hover:bg-gray-100">Our Pets</a>
+                <a href="gallery.html" class="block px-4 py-2 rounded-lg hover:bg-gray-100">Gallery</a>
+                <a href="reviews.html" class="block px-4 py-2 rounded-lg bg-primary/10 text-primary font-medium">Reviews</a>
+                <a href="contact.html" class="block px-4 py-2 rounded-lg hover:bg-gray-100">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-teal-50 via-white to-yellow-50 relative overflow-hidden">
+        <div class="absolute top-20 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-80 h-80 bg-primary/10 rounded-full blur-3xl"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center" data-aos="fade-up">
+                <span class="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-4">Customer Reviews</span>
+                <h1 class="font-heading text-4xl sm:text-5xl font-bold text-dark mb-6">What Our Customers Say</h1>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Real experiences from real pet lovers who found their perfect companions at Chennai Pet's World.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rating Summary -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-r from-primary to-teal-500 rounded-3xl p-8 md:p-12" data-aos="fade-up">
+                <div class="grid md:grid-cols-3 gap-8 items-center">
+                    <div class="text-center md:text-left">
+                        <div class="flex items-center justify-center md:justify-start space-x-2 mb-4">
+                            <span class="text-6xl font-bold text-white">4.8</span>
+                            <div>
+                                <div class="flex text-accent text-xl">★★★★★</div>
+                                <p class="text-white/80 text-sm">out of 5</p>
+                            </div>
+                        </div>
+                        <p class="text-white/90">Based on 36+ Google Reviews</p>
+                    </div>
+                    
+                    <div class="col-span-2">
+                        <div class="space-y-3">
+                            <div class="flex items-center space-x-3">
+                                <span class="text-white text-sm w-8">5★</span>
+                                <div class="flex-1 bg-white/20 rounded-full h-3 overflow-hidden">
+                                    <div class="bg-accent h-full rounded-full" style="width: 85%"></div>
+                                </div>
+                                <span class="text-white text-sm w-8">85%</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <span class="text-white text-sm w-8">4★</span>
+                                <div class="flex-1 bg-white/20 rounded-full h-3 overflow-hidden">
+                                    <div class="bg-accent h-full rounded-full" style="width: 10%"></div>
+                                </div>
+                                <span class="text-white text-sm w-8">10%</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <span class="text-white text-sm w-8">3★</span>
+                                <div class="flex-1 bg-white/20 rounded-full h-3 overflow-hidden">
+                                    <div class="bg-accent h-full rounded-full" style="width: 3%"></div>
+                                </div>
+                                <span class="text-white text-sm w-8">3%</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <span class="text-white text-sm w-8">2★</span>
+                                <div class="flex-1 bg-white/20 rounded-full h-3 overflow-hidden">
+                                    <div class="bg-accent h-full rounded-full" style="width: 1%"></div>
+                                </div>
+                                <span class="text-white text-sm w-8">1%</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <span class="text-white text-sm w-8">1★</span>
+                                <div class="flex-1 bg-white/20 rounded-full h-3 overflow-hidden">
+                                    <div class="bg-accent h-full rounded-full" style="width: 1%"></div>
+                                </div>
+                                <span class="text-white text-sm w-8">1%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Grid -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Review 1 -->
+                <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center space-x-1 mb-4">
+                        <span class="text-accent text-xl">★★★★★</span>
+                    </div>
+                    <p class="text-gray-600 mb-6 leading-relaxed">"Amazing collection of exotic birds! The staff was incredibly helpful and knowledgeable. Got my beautiful African Grey from here and couldn't be happier! The bird is healthy, active, and already learning to talk."</p>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
+                            <span class="font-bold text-primary">RK</span>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-dark">Rajesh Kumar</p>
+                            <p class="text-sm text-gray-500">2 weeks ago</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-4 border-t flex items-center space-x-2 text-sm text-gray-500">
+                        <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>Verified Purchase - African Grey Parrot</span>
+                    </div>
+                </div>
+                
+                <!-- Review 2 -->
+                <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center space-x-1 mb-4">
+                        <span class="text-accent text-xl">★★★★★</span>
+                    </div>
+                    <p class="text-gray-600 mb-6 leading-relaxed">"Best pet shop in Kolathur! Prices are reasonable and pets are healthy. The owner personally guided me in choosing the right breed for my family. Very patient and answered all my questions."</p>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center">
+                            <span class="font-bold text-amber-700">PS</span>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-dark">Priya Sharma</p>
+                            <p class="text-sm text-gray-500">1 month ago</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-4 border-t flex items-center space-x-2 text-sm text-gray-500">
+                        <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>Verified Purchase - Golden Retriever</span>
+                    </div>
+                </div>
+                
+                <!-- Review 3 -->
+                <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center space-x-1 mb-4">
+                        <span class="text-accent text-xl">★★★★★</span>
+                    </div>
+                    <p class="text-gray-600 mb-6 leading-relaxed">"Excellent service! They have a wide variety of pet accessories and food. The quality is top-notch and staff is very friendly. Highly recommended for all pet lovers in Chennai!"</p>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-12 h-12 bg-cta/20 rounded-full flex items-center justify-center">
+                            <span class="font-bold text-cta">AM</span>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-dark">Arun Mohan</p>
+                            <p class="text-sm text-gray-500">1 month ago</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-4 border-t flex items-center space-x-2 text-sm text-gray-500">
+                        <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>Verified Purchase - Pet Accessories</span>
+                    </div>
+                </div>
+                
+                <!-- Review 4 -->
+                <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center space-x-1 mb-4">
+                        <span class="text-accent text-xl">★★★★★</span>
+                    </div>
+                    <p class="text-gray-600 mb-6 leading-relaxed">"I bought a beautiful pair of lovebirds from here. They are so healthy and active! The cage and accessories they recommended are perfect. Will definitely come back for more pets."</p>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                            <span class="font-bold text-green-600">VR</span>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-dark">Vikram Rajan</p>
+                            <p class="text-sm text-gray-500">2 months ago</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-4 border-t flex items-center space-x-2 text-sm text-gray-500">
+                        <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>Verified Purchase - Lovebirds</span>
+                    </div>
+                </div>
+                
+                <!-- Review 5 -->
+                <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center space-x-1 mb-4">
+                        <span class="text-accent text-xl">★★★★★</span>
+                    </div>
+                    <p class="text-gray-600 mb-6 leading-relaxed">"The Labrador puppy we got is absolutely adorable! He's playful, healthy, and has brought so much joy to our family. Thank you Chennai Pet's World for this wonderful companion!"</p>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
+                            <span class="font-bold text-purple-600">MK</span>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-dark">Meena Krishnan</p>
+                            <p class="text-sm text-gray-500">2 months ago</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-4 border-t flex items-center space-x-2 text-sm text-gray-500">
+                        <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>Verified Purchase - Labrador Puppy</span>
+                    </div>
+                </div>
+                
+                <!-- Review 6 -->
+                <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center space-x-1 mb-4">
+                        <span class="text-accent text-xl">★★★★☆</span>
+                    </div>
+                    <p class="text-gray-600 mb-6 leading-relaxed">"Good variety of birds and reasonable prices. The staff is knowledgeable and helped me set up the perfect cage for my new cockatiel. Would recommend to first-time bird owners."</p>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                            <span class="font-bold text-blue-600">SP</span>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-dark">Suresh Pandian</p>
+                            <p class="text-sm text-gray-500">3 months ago</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-4 border-t flex items-center space-x-2 text-sm text-gray-500">
+                        <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>Verified Purchase - Cockatiel</span>
+                    </div>
+                </div>
+                
+                <!-- Review 7 -->
+                <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center space-x-1 mb-4">
+                        <span class="text-accent text-xl">★★★★★</span>
+                    </div>
+                    <p class="text-gray-600 mb-6 leading-relaxed">"My daughter wanted a small dog and they helped us choose a Pomeranian. The puppy is well-trained and super cute! The after-sale guidance on feeding and care was invaluable."</p>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center">
+                            <span class="font-bold text-pink-600">LA</span>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-dark">Lakshmi Anand</p>
+                            <p class="text-sm text-gray-500">3 months ago</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-4 border-t flex items-center space-x-2 text-sm text-gray-500">
+                        <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>Verified Purchase - Pomeranian</span>
+                    </div>
+                </div>
+                
+                <!-- Review 8 -->
+                <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center space-x-1 mb-4">
+                        <span class="text-accent text-xl">★★★★★</span>
+                    </div>
+                    <p class="text-gray-600 mb-6 leading-relaxed">"Been coming here for years for all my pet needs. The quality of bird food and accessories is consistently good. They also remember their regular customers which is nice!"</p>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center">
+                            <span class="font-bold text-teal-600">KV</span>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-dark">Karthik Venkat</p>
+                            <p class="text-sm text-gray-500">4 months ago</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-4 border-t flex items-center space-x-2 text-sm text-gray-500">
+                        <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>Regular Customer</span>
+                    </div>
+                </div>
+                
+                <!-- Review 9 -->
+                <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center space-x-1 mb-4">
+                        <span class="text-accent text-xl">★★★★★</span>
+                    </div>
+                    <p class="text-gray-600 mb-6 leading-relaxed">"The Sun Conure I bought is the most colorful and friendly bird! It's become the star of our home. Chennai Pet's World truly has the best exotic birds in the city."</p>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center">
+                            <span class="font-bold text-orange-600">NS</span>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-dark">Nirmala Subramanian</p>
+                            <p class="text-sm text-gray-500">5 months ago</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-4 border-t flex items-center space-x-2 text-sm text-gray-500">
+                        <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>Verified Purchase - Sun Conure</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Review CTA -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="bg-gray-50 rounded-3xl p-8 md:p-12" data-aos="fade-up">
+                <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    </svg>
+                </div>
+                <h2 class="font-heading text-2xl sm:text-3xl font-bold text-dark mb-4">Had a Great Experience?</h2>
+                <p class="text-gray-600 mb-8">We'd love to hear from you! Share your experience on Google to help other pet lovers find us.</p>
+                <a href="https://www.google.com/maps" target="_blank" class="inline-flex items-center space-x-2 bg-primary text-white px-8 py-4 rounded-full font-semibold hover:bg-teal-600 transition-all hover:shadow-xl transform hover:-translate-y-1">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12.545,10.239v3.821h5.445c-0.712,2.315-2.647,3.972-5.445,3.972c-3.332,0-6.033-2.701-6.033-6.032s2.701-6.032,6.033-6.032c1.498,0,2.866,0.549,3.921,1.453l2.814-2.814C17.503,2.988,15.139,2,12.545,2C7.021,2,2.543,6.477,2.543,12s4.478,10,10.002,10c8.396,0,10.249-7.85,9.426-11.748L12.545,10.239z"/>
+                    </svg>
+                    <span>Leave a Google Review</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12">
+                <div class="md:col-span-1">
+                    <a href="index.html" class="flex items-center space-x-3 mb-6">
+                        <div class="w-12 h-12 bg-gradient-to-br from-primary to-teal-400 rounded-xl flex items-center justify-center">
+                            <span class="text-2xl">🐦</span>
+                        </div>
+                        <div>
+                            <h3 class="font-heading font-bold text-lg leading-tight">CHENNAI PET'S</h3>
+                            <p class="text-xs text-primary font-medium tracking-wider">WORLD</p>
+                        </div>
+                    </a>
+                    <p class="text-gray-400 text-sm">Chennai's trusted destination for exotic birds, dogs, and premium pet accessories.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-heading font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-primary transition-colors">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-primary transition-colors">About Us</a></li>
+                        <li><a href="pets.html" class="text-gray-400 hover:text-primary transition-colors">Our Pets</a></li>
+                        <li><a href="gallery.html" class="text-gray-400 hover:text-primary transition-colors">Gallery</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-primary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-heading font-bold mb-6">Our Pets</h4>
+                    <ul class="space-y-3">
+                        <li><a href="pets.html" class="text-gray-400 hover:text-primary transition-colors">Exotic Birds</a></li>
+                        <li><a href="pets.html" class="text-gray-400 hover:text-primary transition-colors">Dogs & Puppies</a></li>
+                        <li><a href="pets.html" class="text-gray-400 hover:text-primary transition-colors">Accessories</a></li>
+                        <li><a href="pets.html" class="text-gray-400 hover:text-primary transition-colors">Pet Food</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-heading font-bold mb-6">Contact Info</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start space-x-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-gray-400 text-sm">19, S Mada St, Villivakkam, Kolathur, Chennai</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                            </svg>
+                            <a href="tel:09941950925" class="text-gray-400 hover:text-primary transition-colors">099419 50925</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-500 text-sm">© 2026 Chennai Pet's World. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919941950925?text=Hi! I'm interested in your pets." class="fixed bottom-6 right-6 w-14 h-14 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-all hover:scale-110 z-50 animate-bounce-slow" aria-label="Chat on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-white" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+    <!-- Mobile Call Button -->
+    <a href="tel:09941950925" class="fixed bottom-6 left-6 md:hidden w-14 h-14 bg-cta rounded-full flex items-center justify-center shadow-lg hover:bg-orange-600 transition-all z-50" aria-label="Call Now">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+        </svg>
+    </a>
+
+    <!-- AOS Animation Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

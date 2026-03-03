@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View our gallery of exotic birds, dogs, and happy pet owners at Chennai Pet's World, Kolathur.">
+    <meta name="keywords" content="Pet gallery Chennai, Exotic birds photos, Pet shop Kolathur images">
+    
+    <title>Gallery | Chennai Pet's World - Photos of Our Pets</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐦</text></svg>">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#009688',
+                        accent: '#FFC107',
+                        cta: '#FF5722',
+                        dark: '#1a1a2e',
+                    },
+                    fontFamily: {
+                        'heading': ['Poppins', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-body bg-white text-gray-800">
+    
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center space-x-3 group">
+                    <div class="w-12 h-12 bg-gradient-to-br from-primary to-teal-400 rounded-xl flex items-center justify-center transform group-hover:rotate-6 transition-transform">
+                        <span class="text-2xl">🐦</span>
+                    </div>
+                    <div>
+                        <h1 class="font-heading font-bold text-lg text-dark leading-tight">CHENNAI PET'S</h1>
+                        <p class="text-xs text-primary font-medium tracking-wider">WORLD</p>
+                    </div>
+                </a>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="pets.html" class="nav-link">Our Pets</a>
+                    <a href="gallery.html" class="nav-link active">Gallery</a>
+                    <a href="reviews.html" class="nav-link">Reviews</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                
+                <a href="tel:09941950925" class="hidden md:flex items-center space-x-2 bg-cta text-white px-5 py-2.5 rounded-full font-medium hover:bg-orange-600 transition-all hover:shadow-lg hover:shadow-orange-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                    </svg>
+                    <span>Call Now</span>
+                </a>
+                
+                <button class="md:hidden p-2 rounded-lg hover:bg-gray-100" id="mobile-menu-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <div class="md:hidden hidden bg-white border-t" id="mobile-menu">
+            <div class="px-4 py-3 space-y-2">
+                <a href="index.html" class="block px-4 py-2 rounded-lg hover:bg-gray-100">Home</a>
+                <a href="about.html" class="block px-4 py-2 rounded-lg hover:bg-gray-100">About</a>
+                <a href="pets.html" class="block px-4 py-2 rounded-lg hover:bg-gray-100">Our Pets</a>
+                <a href="gallery.html" class="block px-4 py-2 rounded-lg bg-primary/10 text-primary font-medium">Gallery</a>
+                <a href="reviews.html" class="block px-4 py-2 rounded-lg hover:bg-gray-100">Reviews</a>
+                <a href="contact.html" class="block px-4 py-2 rounded-lg hover:bg-gray-100">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-teal-50 via-white to-yellow-50 relative overflow-hidden">
+        <div class="absolute top-20 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-80 h-80 bg-primary/10 rounded-full blur-3xl"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center" data-aos="fade-up">
+                <span class="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-4">Gallery</span>
+                <h1 class="font-heading text-4xl sm:text-5xl font-bold text-dark mb-6">Our Beautiful Pets</h1>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Take a visual tour of our exotic birds, adorable dogs, and the happy moments at Chennai Pet's World.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Filter Tabs -->
+            <div class="flex flex-wrap justify-center gap-3 mb-12" data-aos="fade-up">
+                <button class="gallery-filter-btn active px-6 py-2.5 rounded-full font-medium transition-all" data-filter="all">All</button>
+                <button class="gallery-filter-btn px-6 py-2.5 rounded-full font-medium transition-all" data-filter="birds">Birds</button>
+                <button class="gallery-filter-btn px-6 py-2.5 rounded-full font-medium transition-all" data-filter="dogs">Dogs</button>
+                <button class="gallery-filter-btn px-6 py-2.5 rounded-full font-medium transition-all" data-filter="shop">Our Shop</button>
+            </div>
+            
+            <!-- Gallery Masonry Grid -->
+            <div class="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6" id="gallery-grid">
+                
+                <!-- Image 1 -->
+                <div class="gallery-item break-inside-avoid" data-category="birds" data-aos="fade-up">
+                    <div class="group relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all cursor-pointer" onclick="openLightbox(this)">
+                        <img src="https://images.unsplash.com/photo-1552728089-57bdde30beb3?w=600&h=400&fit=crop" alt="Exotic Bird" class="w-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <p class="font-semibold">Colorful Cockatoo</p>
+                                <p class="text-sm opacity-80">Exotic Bird Collection</p>
+                            </div>
+                            <div class="absolute top-4 right-4">
+                                <div class="w-10 h-10 bg-white/20 backdrop-blur rounded-full flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                        <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Image 2 -->
+                <div class="gallery-item break-inside-avoid" data-category="dogs" data-aos="fade-up" data-aos-delay="100">
+                    <div class="group relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all cursor-pointer" onclick="openLightbox(this)">
+                        <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&h=500&fit=crop" alt="Golden Retriever" class="w-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <p class="font-semibold">Golden Retriever</p>
+                                <p class="text-sm opacity-80">Our Dog Collection</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Image 3 -->
+                <div class="gallery-item break-inside-avoid" data-category="birds" data-aos="fade-up" data-aos-delay="200">
+                    <div class="group relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all cursor-pointer" onclick="openLightbox(this)">
+                        <img src="https://images.unsplash.com/photo-1452570053594-1b985d6ea890?w=600&h=700&fit=crop" alt="Scarlet Macaw" class="w-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <p class="font-semibold">Scarlet Macaw</p>
+                                <p class="text-sm opacity-80">Vibrant & Beautiful</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Image 4 -->
+                <div class="gallery-item break-inside-avoid" data-category="dogs" data-aos="fade-up">
+                    <div class="group relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all cursor-pointer" onclick="openLightbox(this)">
+                        <img src="https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?w=600&h=450&fit=crop" alt="Labrador Puppy" class="w-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <p class="font-semibold">Labrador Puppy</p>
+                                <p class="text-sm opacity-80">Playful & Friendly</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Image 5 -->
+                <div class="gallery-item break-inside-avoid" data-category="birds" data-aos="fade-up" data-aos-delay="100">
+                    <div class="group relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all cursor-pointer" onclick="openLightbox(this)">
+                        <img src="https://images.unsplash.com/photo-1544923246-77307dd628b9?w=600&h=400&fit=crop" alt="African Grey" class="w-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <p class="font-semibold">African Grey Parrot</p>
+                                <p class="text-sm opacity-80">Intelligent Companion</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Image 6 -->
+                <div class="gallery-item break-inside-avoid" data-category="shop" data-aos="fade-up" data-aos-delay="200">
+                    <div class="group relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all cursor-pointer" onclick="openLightbox(this)">
+                        <img src="https://images.unsplash.com/photo-1425082661705-1834bfd09dca?w=600&h=500&fit=crop" alt="Pet Shop" class="w-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <p class="font-semibold">Our Pet Shop</p>
+                                <p class="text-sm opacity-80">Welcome to Chennai Pet's World</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Image 7 -->
+                <div class="gallery-item break-inside-avoid" data-category="dogs" data-aos="fade-up">
+                    <div class="group relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all cursor-pointer" onclick="openLightbox(this)">
+                        <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=600&h=600&fit=crop" alt="German Shepherd" class="w-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <p class="font-semibold">German Shepherd</p>
+                                <p class="text-sm opacity-80">Loyal Guardian</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Image 8 -->
+                <div class="gallery-item break-inside-avoid" data-category="birds" data-aos="fade-up" data-aos-delay="100">
+                    <div class="group relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all cursor-pointer" onclick="openLightbox(this)">
+                        <img src="https://images.unsplash.com/photo-1518715303843-586e350765b2?w=600&h=400&fit=crop" alt="Budgerigar" class="w-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <p class="font-semibold">Budgerigars</p>
+                                <p class="text-sm opacity-80">Colorful Little Friends</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Image 9 -->
+                <div class="gallery-item break-inside-avoid" data-category="dogs" data-aos="fade-up" data-aos-delay="200">
+                    <div class="group relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all cursor-pointer" onclick="openLightbox(this)">
+                        <img src="https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=600&h=450&fit=crop" alt="Beagle" class="w-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <p class="font-semibold">Beagle Puppy</p>
+                                <p class="text-sm opacity-80">Curious Explorer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Image 10 -->
+                <div class="gallery-item break-inside-avoid" data-category="birds" data-aos="fade-up">
+                    <div class="group relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all cursor-pointer" onclick="openLightbox(this)">
+                        <img src="https://images.unsplash.com/photo-1591198936750-16d8e15edb8e?w=600&h=500&fit=crop" alt="Sun Conure" class="w-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <p class="font-semibold">Sun Conure</p>
+                                <p class="text-sm opacity-80">Sunshine in Feathers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Image 11 -->
+                <div class="gallery-item break-inside-avoid" data-category="shop" data-aos="fade-up" data-aos-delay="100">
+                    <div class="group relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all cursor-pointer" onclick="openLightbox(this)">
+                        <img src="https://images.unsplash.com/photo-1606567595334-d39972c85dfd?w=600&h=400&fit=crop" alt="Pet Accessories" class="w-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <p class="font-semibold">Happy Pet Moments</p>
+                                <p class="text-sm opacity-80">Creating Memories</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Image 12 -->
+                <div class="gallery-item break-inside-avoid" data-category="dogs" data-aos="fade-up" data-aos-delay="200">
+                    <div class="group relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all cursor-pointer" onclick="openLightbox(this)">
+                        <img src="https://images.unsplash.com/photo-1605568427561-40dd23c2acea?w=600&h=550&fit=crop" alt="Pomeranian" class="w-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <p class="font-semibold">Pomeranian</p>
+                                <p class="text-sm opacity-80">Fluffy Companion</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram CTA -->
+    <section class="py-16 bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex items-center justify-center mb-6" data-aos="fade-up">
+                <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"/>
+                </svg>
+            </div>
+            <h2 class="font-heading text-3xl font-bold text-white mb-4" data-aos="fade-up" data-aos-delay="100">Follow Us on Instagram</h2>
+            <p class="text-white/90 mb-8" data-aos="fade-up" data-aos-delay="200">Get daily updates, new arrivals, and behind-the-scenes content!</p>
+            <a href="#" class="inline-flex items-center space-x-2 bg-white text-gray-900 px-8 py-4 rounded-full font-semibold hover:shadow-xl transition-all transform hover:-translate-y-1" data-aos="fade-up" data-aos-delay="300">
+                <span>@chennaipetsworld</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12">
+                <div class="md:col-span-1">
+                    <a href="index.html" class="flex items-center space-x-3 mb-6">
+                        <div class="w-12 h-12 bg-gradient-to-br from-primary to-teal-400 rounded-xl flex items-center justify-center">
+                            <span class="text-2xl">🐦</span>
+                        </div>
+                        <div>
+                            <h3 class="font-heading font-bold text-lg leading-tight">CHENNAI PET'S</h3>
+                            <p class="text-xs text-primary font-medium tracking-wider">WORLD</p>
+                        </div>
+                    </a>
+                    <p class="text-gray-400 text-sm">Chennai's trusted destination for exotic birds, dogs, and premium pet accessories.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-heading font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-primary transition-colors">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-primary transition-colors">About Us</a></li>
+                        <li><a href="pets.html" class="text-gray-400 hover:text-primary transition-colors">Our Pets</a></li>
+                        <li><a href="gallery.html" class="text-gray-400 hover:text-primary transition-colors">Gallery</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-primary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-heading font-bold mb-6">Our Pets</h4>
+                    <ul class="space-y-3">
+                        <li><a href="pets.html" class="text-gray-400 hover:text-primary transition-colors">Exotic Birds</a></li>
+                        <li><a href="pets.html" class="text-gray-400 hover:text-primary transition-colors">Dogs & Puppies</a></li>
+                        <li><a href="pets.html" class="text-gray-400 hover:text-primary transition-colors">Accessories</a></li>
+                        <li><a href="pets.html" class="text-gray-400 hover:text-primary transition-colors">Pet Food</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-heading font-bold mb-6">Contact Info</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start space-x-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-gray-400 text-sm">19, S Mada St, Villivakkam, Kolathur, Chennai</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                            </svg>
+                            <a href="tel:09941950925" class="text-gray-400 hover:text-primary transition-colors">099419 50925</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-500 text-sm">© 2026 Chennai Pet's World. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="fixed inset-0 bg-black/90 z-50 hidden items-center justify-center p-4" onclick="closeLightbox(event)">
+        <button onclick="closeLightbox(event)" class="absolute top-4 right-4 w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center text-white transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+        </button>
+        <img id="lightbox-img" src="" alt="" class="max-w-full max-h-[90vh] rounded-2xl">
+    </div>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919941950925?text=Hi! I'm interested in your pets." class="fixed bottom-6 right-6 w-14 h-14 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-all hover:scale-110 z-40 animate-bounce-slow" aria-label="Chat on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-white" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+    <!-- Mobile Call Button -->
+    <a href="tel:09941950925" class="fixed bottom-6 left-6 md:hidden w-14 h-14 bg-cta rounded-full flex items-center justify-center shadow-lg hover:bg-orange-600 transition-all z-40" aria-label="Call Now">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+        </svg>
+    </a>
+
+    <!-- AOS Animation Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
