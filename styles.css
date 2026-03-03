@@ -1,8 +1,21 @@
 /* Chennai Pet's World - Custom Styles */
 
+/* Prevent horizontal scroll */
+html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
 /* Smooth Scrolling */
 html {
     scroll-behavior: smooth;
+}
+
+/* Show logo text on screens >= 375px */
+@media (min-width: 375px) {
+    .xs\:block {
+        display: block !important;
+    }
 }
 
 /* Custom Scrollbar */
