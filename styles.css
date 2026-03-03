@@ -11,13 +11,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Show logo text on screens >= 375px */
-@media (min-width: 375px) {
-    .xs\:block {
-        display: block !important;
-    }
-}
-
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
     width: 8px;
