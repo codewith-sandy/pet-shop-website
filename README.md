@@ -1,6 +1,19 @@
 # 🐦 Chennai Pet's World - Website
 
-A modern, mobile-first website for **Chennai Pet's World**, an exotic pet shop located in Kolathur, Chennai, specializing in exotic birds, dogs, and premium pet accessories.
+> 🌟 **Where Exotic Meets Extraordinary** — Step into Chennai's most beloved pet destination, now brought to life online!
+
+**Chennai Pet's World** isn't just a pet shop — it's a passion project for animal lovers. This vibrant, mobile-first website showcases a curated world of exotic birds, purebred dogs, and top-tier pet accessories, all from a shop that has earned a stellar ⭐ 4.8/5 rating by delighting 500+ families across Chennai.
+
+Built with **HTML5, Tailwind CSS, and Vanilla JavaScript**, this zero-build-step website loads instantly in any browser. It features silky-smooth AOS scroll animations, one-tap WhatsApp & call buttons, a filterable pet catalog, a stunning masonry photo gallery, real customer reviews, and a Google Maps-integrated contact page — everything a modern pet business needs to convert browsers into buyers.
+
+Whether you're a first-time pet parent searching for the perfect feathered friend or a seasoned enthusiast hunting rare exotic breeds, this site guides you every step of the way — from discovery to doorstep.
+
+**Key highlights:**
+- 🦜 Exotic birds, dogs & premium accessories all in one place
+- 📱 Fully responsive across mobile, tablet & desktop
+- 💬 Instant WhatsApp inquiry with pre-filled messages
+- 🖼️ Lightbox gallery & filterable pet catalog
+- 📍 Located at Kolathur, Chennai — serving pet lovers since day one
 
 ## 📋 Project Overview
 
